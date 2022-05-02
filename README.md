@@ -1,71 +1,34 @@
-# Strapi Starter Gatsby Blog
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-Gatsby starter for creating a blog with Strapi.
+## Getting Started
 
-![screenshot image](/screenshot.png)
-
-This starter allows you to try Strapi with Gatsby with the example of a simple blog. It is fully customizable and due to the fact that it is open source, fully open to contributions. So do not hesitate to add new features and report bugs!
-
-## Features
-
-- 2 Content types: Article, Category
-- 2 Created articles
-- 3 Created categories
-- Responsive design using UIkit
-- SEO and social media friendly
-
-Pages:
-
-- "/" to display every articles
-- "/article/:id" to display one article
-- "/category/:id" display articles depending on the category
-
-## Getting started
-
-The easiest way to try this starter is to run it locally on your computer.
-
-First, you'll need to create your own copy of this starter. You can do so by clicking [the "Use this template" button](https://github.com/strapi/strapi-starter-gatsby-blog/generate) on GitHub, and filling the [form](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template)
-
-### Backend
-
-Create a Strapi project named `backend` using the [blog template](https://github.com/strapi/strapi-template-blog):
-
-```
-# Using Yarn
-yarn create strapi-app backend --template https://github.com/strapi/strapi-template-blog
-
-# Or using NPM
-npx create-strapi-app backend --template https://github.com/strapi/strapi-template-blog
-```
-
-The Strapi server will automatically start and import sample seed data.
-
-### Frontend
-
-Leave the Strapi backend running in the background. Open another terminal tab, and make sure you're in the `frontend` directory:
+First, run the development server:
 
 ```bash
-cd frontend
+npm run dev
+# or
+yarn dev
 ```
 
-Install dependencies and start the Gatsby server:
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```bash
-# Using yarn
-yarn install
-yarn develop
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-# Using npm
-npm install
-npm run develop
-```
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-If you want to change the default environment variables, create a `.env` file like this:
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-```sh
-cp .env.example .env
-```
+## Learn More
 
-The Gatsby server will run here => [http://localhost:3000](http://localhost:3000)
+To learn more about Next.js, take a look at the following resources:
 
-Enjoy this starter!
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
